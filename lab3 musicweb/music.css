@@ -1,0 +1,137 @@
+body {
+  background: rgb(82, 115, 122);
+  background: radial-gradient(
+    circle,
+    rgba(82, 115, 122, 1) 5%,
+    rgba(17, 44, 79, 1) 100%
+  );
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: clamp(20px, 3vw, 50px);
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+}
+.nav_container {
+  display: flex;
+  position: sticky;
+  top: 0;
+  /* justify-content: ; */
+}
+.nav_intro {
+  display: flex;
+  padding: 20px;
+
+  width: 50%;
+}
+
+.nav_items {
+  width: 50%;
+  height: 80px;
+  display: flex;
+  margin-left: 59%;
+  margin-top: 25px;
+  gap: 10px;
+  padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.nav_items a {
+  padding: 0 0.5rem;
+  font-size: clamp(10px, 3vw, 20px);
+}
+
+.welcome_text {
+  text-align: center;
+  padding: 5px;
+}
+
+.welcome_text,
+.audio_intro,
+.poster_info {
+  font-family: "Fjalla One", sans-serif;
+  animation: changeColor 5s infinite;
+  font-size: clamp(10px, 3vw, 25px);
+}
+
+@keyframes changeColor {
+  0% {
+    color: rgb(158, 89, 89);
+  }
+  50% {
+    color: rgb(118, 118, 187);
+  }
+  100% {
+    color: rgb(223, 57, 57);
+  }
+}
+
+.card_container {
+  display: flex;
+  padding: 20px;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: ;
+  width: 15%;
+  box-shadow: 0 4px 8px 0 black;
+  transition: 0.3s;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: "Fjalla One", sans-serif;
+}
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgb(217, 59, 59);
+}
+
+.card_container_sec {
+  display: flex;
+  padding: 20px;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card_container_third {
+  display: flex;
+  padding: 20px;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.audio_container {
+  text-align: center;
+}
+.audio_links {
+  text-align: center;
+}
+
+.card_upcoming,
+.poster_info {
+  text-align: center;
+  padding: 5px;
+
+  /* padding: 20px 10px; */
+}
+/* text-align: center;
+  padding: 5px; */
+
+p {
+  text-align: center;
+}
